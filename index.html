@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculateMyDahej.com - Satirical Dowry Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CalculateMyDahej.com</h1>
+            <p class="subtitle">A satirical look at dowry valuation in modern society</p>
+            <div class="disclaimer">
+                <strong>Disclaimer:</strong> This is a satirical tool meant to highlight the absurdity of dowry systems. Dowry is illegal in India under the Dowry Prohibition Act, 1961.
+            </div>
+        </header>
+
+        <main>
+            <div class="calculator-container">
+                <h2>Dowry Estimation Calculator</h2>
+                
+             <div class="form-group">
+    <label for="governmentJobCount">Number of Government Employees in Family:</label>
+    <input type="number" id="governmentJobCount" name="governmentJobCount" min="0" value="0" placeholder="Enter number">
+    <span class="hint">(Adds ₹200,000 per employee)</span>
+</div>
+
+<div class="form-group">
+    <label for="businessValue">Business Value (₹):</label>
+    <input type="number" id="businessValue" name="businessValue" min="0" placeholder="Enter business value">
+    <span class="hint">(10% of business value included in total)</span>
+</div>
+
+<div class="form-group">
+    <label for="landArea">Land Owned (in sqm):</label>
+    <input type="number" id="landArea" name="landArea" min="0" placeholder="Enter area in square meters">
+    <span class="hint">(₹2,000 per sqm)</span>
+</div>
+
+                    <div class="form-group">
+                        <label for="monthlyIncome">Monthly Income (₹):</label>
+                        <input type="number" id="monthlyIncome" name="monthlyIncome" min="0" placeholder="Enter monthly income">
+                        
+                    </div>
+
+                    <div class="form-group">
+                        <label for="homePrice">Home Market Value (₹):</label>
+                        <input type="number" id="homePrice" name="homePrice" min="0" placeholder="Enter home value">
+                        
+                    </div>
+
+                    <button type="button" id="calculateBtn">Calculate My Dahej Value</button>
+                </form>
+
+                <div id="resultContainer" class="hidden">
+                    <h3>Your Estimated Dowry Value:</h3>
+                    <div id="resultValue" class="result-value">₹0</div>
+                    
+                    <div class="breakdown">
+                        <h4>Value Breakdown:</h4>
+                        <ul id="breakdownList">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+
+                    <div class="educational-note">
+                        <p>Remember: In reality, a person's worth cannot be measured in monetary terms. The practice of dowry is not only illegal but also perpetuates gender inequality and financial burdens.</p>
+                        <p>If you or someone you know is being pressured for dowry, please contact authorities or seek help from organizations working against this practice.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>This website is intended for educational and satirical purposes only.</p>
+            <p>Dowry is prohibited under <a href="https://legislative.gov.in/sites/default/files/A1961-28.pdf" target="_blank">The Dowry Prohibition Act, 1961</a>.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>by @__mind_wizard__</footer>
+</html>
